@@ -1,4 +1,4 @@
-# PROJECT NAME
+## PROJECT NAME
 Hospital data analysis using HDFS and Spark
 
 # Project Description
@@ -31,6 +31,14 @@ Creating Dataframe in spark
 >>> df2 = spark.read.csv('/project2/test_data.csv',inferSchema=True,header=False).toDF("id","Hcode","HCcode","A_Room","Dep","Wcode","Bed_Grade","pid"
 ,"PCcode","Admission","Illness","Visit_P","P_age","Deposit") 
 ```
+Creting Temporary Table in Spark
+```
+>>> df3=df2.createOrReplaceTempView("Health_Care")
+```
 
-
+# References
+* https://sparkbyexamples.com/spark/different-ways-to-create-a-spark-dataframe/
+* https://sparkbyexamples.com/spark/spark-sqlcontext-explained-with-examples/
+* https://spark.apache.org/docs/latest/sql-programming-guide.html
+* https://spark.apache.org/docs/latest/sql-data-sources-hive-tables.html
  
