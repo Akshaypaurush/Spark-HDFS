@@ -8,7 +8,7 @@ Then we performed some dataframes methods on it and also create one temporary vi
 Then we performed partitioning and bucketing in spark, whose partition files are created in HDFS directory.
 
 # Technologies Used
-** HDFS - v2.7
+* HDFS - v2.7
 2. Spark - v2.3
 
 # Features
