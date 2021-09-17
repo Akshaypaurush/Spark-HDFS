@@ -21,14 +21,16 @@ Then we performed partitioning and bucketing in spark, whose partition files are
 
 # Getting Started
 importing some packages
-'''
+```
 >>> import pyspark                                                                                                                                   
->>> from pyspark.sql import sparksession '''
+>>> from pyspark.sql import sparksession 
+```
 
 Creating Dataframe in spark
-'''
+```
 >>> df2 = spark.read.csv('/project2/test_data.csv',inferSchema=True,header=False).toDF("id","Hcode","HCcode","A_Room","Dep","Wcode","Bed_Grade","pid"
-,"PCcode","Admission","Illness","Visit_P","P_age","Deposit") '''
+,"PCcode","Admission","Illness","Visit_P","P_age","Deposit") 
+```
 
 
  
