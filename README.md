@@ -34,6 +34,12 @@ Creting Temporary Table in Spark
 ```
 >>> df3=df2.createOrReplaceTempView("Health_Care")
 ```
+## Contributors
+* Anosh Shaju
+* Omkar Gaikwad
+* David Stephen Raj
+* Ashish Fulwade
+* Akshay Paurush Singh Bhadauria
 
 ## References
 * https://sparkbyexamples.com/spark/different-ways-to-create-a-spark-dataframe/
