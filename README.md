@@ -1,25 +1,24 @@
-## PROJECT NAME
-Hospital data analysis using HDFS and Spark
+# Hospital data analysis using HDFS and Spark
 
-# Project Description
+## Project Description
 For this Big-data project, We took the Hospital data from Kaggle website, and converted that data into CSV file. 
 The dataset contains 14 columns and 137K rows approximately. Then using Ambari We imported the CSV file data into HDFS. 
 After that we created one dataframe in spark and with the help of that dataframe we loaded our csv file into spark. 
 Then we performed some dataframes methods on it and also create one temporary view for the spark-sql queries. We also stored our output queries into a file in HDFS directory. 
 Then we performed partitioning and bucketing in spark, whose partition files are created in HDFS directory.
 
-# Technologies Used
+## Technologies Used
 * HDFS - v2.7
 * Spark - v2.3
 * Hive - v1.2
 
-# Features
+## Features
 * Created Spark_Dataframe and implemented Spark_Dataframes methods.
 * Created temporary Table in Spark and applied some Spark_SQL queries on it.
 * Did partitioning and bucketing with the help of Spark_SQL.
 * Connected Hive To Spark. 
 
-# Getting Started
+## Getting Started
 importing some packages
 ```
 >>> import pyspark                                                                                                                                   
@@ -36,7 +35,7 @@ Creting Temporary Table in Spark
 >>> df3=df2.createOrReplaceTempView("Health_Care")
 ```
 
-# References
+## References
 * https://sparkbyexamples.com/spark/different-ways-to-create-a-spark-dataframe/
 * https://sparkbyexamples.com/spark/spark-sqlcontext-explained-with-examples/
 * https://spark.apache.org/docs/latest/sql-programming-guide.html
